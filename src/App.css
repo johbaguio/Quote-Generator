@@ -1,33 +1,76 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Kalam|Permanent+Marker&display=swap');
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: calc(100vh - 100px);
+  background: rgb(198, 241, 156) url('./Images/bg') right;
 }
 
-.App-link {
-  color: #61dafb;
+#quote-box{
+  border:3px rgb(247, 246, 244) outset;
+  border-radius:8px;
+  padding:40px;
+  background: rgb(250, 248, 246);
+  box-shadow:-1px -1px 25px rgb(252, 250, 249);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+  font-family: 'Permanent Marker', cursive;
+  margin:40px 0;
+  letter-spacing: 1.5px;
+  color:rgb(149, 180, 128);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+}
+
+h3{
+  font-family: 'Cutive Mono', monospace;
+  font-weight: bold;
+  color: rgb(81, 151, 10);
+  border:2px rgb(247, 246, 244) outset;
+  box-shadow:-1px -1px 25px rgb(208, 224, 170);
+
+}
+
+h4{
+  font-family: 'Kalam', cursive;
+  color: rgb(52, 94, 11);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  
+}
+
+#new-quote{
+  font-size:10px;
+  color: rgb(8, 8, 8);
+  padding:6px;
+  font-weight: bold;
+  border-radius: 5px;
+  background: rgb(198, 241, 156);
+  
+}
+
+.btn{
+  font-family: 'Kalam', cursive;
+  padding:3px 5px;
+}
+
+.btn:hover{
+  transform: scale(.9); 
+}
+
+a {
+  text-decoration: none;
+  color:black;
+  font-weight:bold;
+}
+
+.twitter-icon{
+  position: absolute;
+  width:52px;
+  margin-top: -9px;
 }
