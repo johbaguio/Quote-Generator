@@ -3,6 +3,8 @@ import axios from 'axios';
 import '../App.css';
 import GetNewQuote from './GetNewQuote';
 import ShareQuote from './ShareQuote';
+import smiley from '../Images/smiley.png';
+import winky from '../Images/wink.png';
 
 
 class QuotesGenerator extends Component {
@@ -35,7 +37,7 @@ class QuotesGenerator extends Component {
             });
     }
 
-    componentDidMount () {
+    componentDidMount() {
         this.getQuote();
     }
 
@@ -49,11 +51,14 @@ class QuotesGenerator extends Component {
         const { quote, author } = this.state;
         return (
             <div className='container'>
-                <h1>Your daily dose of positivity    ㋛</h1>
+                <img src={smiley} alt='smiley' className='smiley' />
+                <h1>Your daily dose of positivity
+                <img src={winky} alt='winky' className='winky' />
+                </h1>
                 <div id="quote-box">
                     <div id="text">
                         <h3>{quote}</h3>
-                    </div> 
+                    </div>
                     <div id="author">
                         <h4>～ {author}</h4>
                     </div>
@@ -62,11 +67,11 @@ class QuotesGenerator extends Component {
                         <ShareQuote quote={quote} author={author} />
 
                     </div>
-                    
-                    
+
+
                 </div>
 
-            </div>
+            </div >
 
 
 

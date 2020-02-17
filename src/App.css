@@ -1,66 +1,76 @@
-@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Kalam|Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Kalam|Permanent+Marker|Montserrat&display=swap');
 
 body{
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 100px);
-  background: rgb(198, 241, 156) url('./Images/bg') right;
+  height: 100vh;
+  background-image: linear-gradient(to bottom,#FFBD54 0%,#fec458 50%,#FFBC3A 100%);
+  background-repeat: no-repeat;
+  /* background: rgb(198, 241, 156) url('./Images/bg') right; */
 }
 
 #quote-box{
-  border:3px rgb(247, 246, 244) outset;
-  border-radius:8px;
+  width:70%;
+  margin:0 auto;
+  /* border:3px rgba(0, 0, 0,.5) outset; */
   padding:40px;
-  background: rgb(250, 248, 246);
-  box-shadow:-1px -1px 25px rgb(252, 250, 249);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.5);
+  /* box-shadow:-1px -1px 25px rgb(252, 250, 249); */
 }
 
 h1{
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Montserrat', sans-serif;
   margin:40px 0;
   letter-spacing: 1.5px;
-  color:rgb(149, 180, 128);
+  color:black;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  letter-spacing: 5px;
+  /* -webkit-text-stroke-color: rgb(223, 223, 223); */
 
 }
 
 h3{
   font-family: 'Cutive Mono', monospace;
   font-weight: bold;
-  color: rgb(81, 151, 10);
-  border:2px rgb(247, 246, 244) outset;
-  box-shadow:-1px -1px 25px rgb(208, 224, 170);
+  color: rgb(0, 0, 0);
 
 }
 
 h4{
   font-family: 'Kalam', cursive;
-  color: rgb(52, 94, 11);
+  color: rgb(143, 134, 7);
   font-weight: bold;
   letter-spacing: 1.5px;
   
 }
 
 #new-quote{
-  font-size:10px;
+  font-size:12px;
   color: rgb(8, 8, 8);
-  padding:6px;
+  padding:10px 20px;
+  margin:0 4% 0 0;
   font-weight: bold;
   border-radius: 5px;
-  background: rgb(198, 241, 156);
+  border:outset black 1px;
+  background: #FFBD54;
   
 }
 
 .btn{
-  font-family: 'Kalam', cursive;
-  padding:3px 5px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  border:none !important;
+}
+
+.btn:focus{
+  border:none !important;
 }
 
 .btn:hover{
-  transform: scale(.9); 
+  transform: scale(1.05);
 }
 
 a {
@@ -69,8 +79,26 @@ a {
   font-weight:bold;
 }
 
-.twitter-icon{
-  position: absolute;
-  width:52px;
-  margin-top: -9px;
+.icon {
+  font-size: 25px;
+  color:rgb(12, 1, 1);
+ vertical-align: middle;
+}
+
+.icons-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0 5%;
+}
+
+.smiley{
+  width:200px;
+  margin:0 auto;
+}
+
+.winky{
+  width:30px;
+  margin-left:10px;
+  vertical-align: middle;
 }
